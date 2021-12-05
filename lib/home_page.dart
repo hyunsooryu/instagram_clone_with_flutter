@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'feed_screen.dart';
+
 class HomePage extends StatefulWidget{
   HomePage({
     Key? key,
@@ -20,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
   static List<Widget> _screens = <Widget>[
-    Container(color : Colors.amberAccent),
+    FeedScreen(),
     Container(color : Colors.blueAccent),
     Container(color : Colors.greenAccent),
     Container(color : Colors.deepPurpleAccent),
@@ -30,11 +32,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-        appBar: AppBar(
-          title: const Text("cool App"),
-        ),
-
         body: IndexedStack(
           index : _selectedIndex,
           children: _screens
