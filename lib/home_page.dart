@@ -12,11 +12,11 @@ class HomePage extends StatefulWidget{
 
 class _HomePageState extends State<HomePage> {
   List<BottomNavigationBarItem> btmNavItems = [
-     BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-     BottomNavigationBarItem(icon: Icon(Icons.search), label: ''),
-     BottomNavigationBarItem(icon: Icon(Icons.add), label: ''),
-     BottomNavigationBarItem(icon: Icon(Icons.healing), label: ''),
-     BottomNavigationBarItem(icon: Icon(Icons.account_circle), label:''),
+     const BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
+     const BottomNavigationBarItem(icon: Icon(Icons.search), label: ''),
+     const BottomNavigationBarItem(icon: Icon(Icons.add), label: ''),
+     const BottomNavigationBarItem(icon: Icon(Icons.healing), label: ''),
+     const BottomNavigationBarItem(icon: Icon(Icons.account_circle), label:''),
   ];
 
   int _selectedIndex = 0;
